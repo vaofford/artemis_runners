@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp
+        spec="1.0+"
+	codebase="http://www.genedb.org/artemis/"
+        href="db_act.jnlp">
+         <information>
+           <title>ACT (CHADO)</title>
+           <vendor>Sanger Institute</vendor> 
+           <homepage href="http://www.sanger.ac.uk/resources/software/act/"/>
+           <description>ACT</description>
+           <description kind="short">DNA sequence viewer and annotation tool.
+           </description>
+           <offline-allowed/>
+         </information>
+         <security>
+           <all-permissions/>
+         </security>
+         <resources>
+           <j2se version="1.5+" initial-heap-size="60m" max-heap-size="2048m"/>
+           <jar href="sartemis.jar"/>
+           <property name="artemis.environment" value="UNIX" />
+           <property name="j2ssh" value="" />
+           <property name="ibatis" value="" />
+           <property name="chado" value="localhost:5432/pathogens?" />
+           <property name="jdbc.drivers" value="org.postgresql.Driver" />
+           <property name="apple.laf.useScreenMenuBar" value="true" />
+           <property name="com.apple.mrj.application.apple.menu.about.name" value="ACT" />
+           <property name="apple.laf.useScreenMenuBar" value="true" />
+         </resources>
+         <application-desc main-class="uk.ac.sanger.artemis.components.ActMain"/>
+       </jnlp>

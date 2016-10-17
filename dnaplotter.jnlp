@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp
+        spec="1.0+"
+        codebase="http://www.genedb.org/artemis/"
+	href="dnaplotter.jnlp"
+        >
+         <information>
+           <title>DNAPlotter</title>
+           <vendor>Sanger Institute</vendor> 
+           <homepage href="http://www.sanger.ac.uk/resources/software/dnaplotter/"/>
+           <description>Artemis</description>
+           <description kind="short">DNA circular diagram.
+           </description>
+           <offline-allowed/>
+         </information>
+         <security>
+           <all-permissions/>
+         </security>
+         <resources>
+           <j2se version="1.4+ 1.4.2" initial-heap-size="32m" max-heap-size="200m"/>
+             <jar href="sdnaplotter.jar"/>
+           <property name="com.apple.mrj.application.apple.menu.about.name" value="DNAPlotter" />
+         </resources>
+         <application-desc main-class="uk.ac.sanger.artemis.circular.DNADraw"/>
+       </jnlp>
